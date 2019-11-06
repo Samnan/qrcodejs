@@ -40,6 +40,10 @@ qrcode.makeCode("https://github.com/KeeeX"); // make another code.
 ```javascript
 const QRCode = require("@keeex/qrcodejs-kx");
 // Use QRCode as usual
+=======
+qrcode.makeCode("http://naver.com"); // make another code.
+qrcode.colorDark("#FF0000"); //change the Dark Color on the Go
+qrcode.colorLight("#FF0000"); //change the Light Color on the Go
 ```
 
 ## Browser Compatibility
