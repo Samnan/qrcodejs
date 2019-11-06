@@ -6,8 +6,6 @@
 <style>
 /*! 外边框通过CSS设置样式 */
 #qrcode {
-	border: 10px dashed red;
-	border-radius: 10px;
 	width: 300px;
 	height: 300px;
 }
@@ -19,11 +17,11 @@ window.onload=()=>{
 	// 设置参数方式
 	var qrcode = new QRCode('qrcode', {
 		//二维码内容
-		text: 'your content',
+		text: 'Sample QR Code with an embedded Icon',
 		//二维码宽度
-		width: 125,
+		width: 210,
 		//二维码高度
-		height: 125,
+		height: 210,
 		//二维码前景色
 		colorDark : '#000000',
 		//二维码背景色
@@ -37,13 +35,13 @@ window.onload=()=>{
 		*/
 		correctLevel : QRCode.CorrectLevel.L,
 		//二维码中心图片
-		iconSrc: "http://www.365mini.com/static/image/cry.gif",
+		iconSrc: "icon.png",
 		//二维码中心图片边框弧度
-		iconRadius: 10,
+		iconRadius: 0,
 		//二维码中心图片边框宽度
-		iconBorderWidth: 5,
+		iconBorderWidth: 3,
 		//二维码中心图片边框颜色
-		iconBorderColor: "red",
+		iconBorderColor: "black",
 		//外围幕布（或画布）的宽度
 		curtainWidth: 300,
 		//外围幕布（或画布）的高度
@@ -53,9 +51,9 @@ window.onload=()=>{
 		//外围幕布（或画布）底色(底色和图片同时设置时，显示底色)
 		//curtainBgColor: "Wheat",
 		//二维码相对外围幕布（或画布）的X偏移
-		qrcodeOffsetX: 88,
+		qrcodeOffsetX: 40,
 		//二维码相对外围幕布（或画布）的Y偏移
-		qrcodeOffsetY: 108,
+		qrcodeOffsetY: 40,
 	});
 	//清空原先的图像，重新做一张
 	//qrcode.clear();
